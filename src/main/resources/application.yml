@@ -1,0 +1,34 @@
+kafka:
+  monitor:
+    consumer:
+      groupId: monitor-user
+  quickbook:
+    consumer:
+      groupId: qb-user
+  tSheet:
+    consumer:
+      groupId: tSheet-user
+  profileValidationTopic: profile_validation_topic
+  bootstrapAddress: localhost:9092
+  monitorTopic: monitor_topic
+
+dynamodb:
+  secretKey: I7CdW0y+2y7LM89rs0WMSaF/IezjU+3m5dAQPeW8
+  accessKey: AKIA36YDG3RCXSYVBTGO
+  signingRegion: ap-southeast-2
+  serviceEndPoint: dynamodb.ap-southeast-2.amazonaws.com
+
+logging:
+  level:
+    com:
+      intuit: INFO
+    root: INFO
+
+quickbook:
+  productId: '1'
+tSheet:
+  productId: '2'
+
+spring:
+  main:
+    allow-bean-definition-overriding=true:
